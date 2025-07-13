@@ -72,12 +72,3 @@ def query_player_ppg(ppg_df: pd.DataFrame, position: str | None = None, min_game
               .sort_values("ppg", ascending=False)
               .reset_index(drop=True)
     )
-
-
-df = get_player_ppg()
-
-df = query_player_ppg(df, position='WR', min_games=9)
-
-# print(df.head)
-
-print(df.to_string(index=False))   # omits the index if you don’t need it
