@@ -110,7 +110,7 @@ for pos in POSITIONS:
         st.markdown(f"**Top {top_n} {pos}s by PROJ_PPG (Clustered)**")
         # show exclusion status too
         st.dataframe(
-            df_top[["rank", "Player", "PROJ_PPG", "cluster_ordered", "excluded"]],
+            df_top[["rank", "Player", "Team", "PROJ_PPG", "cluster_ordered", "excluded"]],
             use_container_width=True
         )
 
